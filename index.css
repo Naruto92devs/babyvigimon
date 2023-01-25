@@ -1,0 +1,1595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ---------------- navbar align and element management ------------------ */
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    height: 7rem;
+    padding: 0px 13.6rem;
+}
+/* ------------------------------left-side-menu management------------------------ */
+
+.header .nav .left-side-menu{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    width: 50%;
+}
+
+.header .nav .left-side-menu .sub-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .nav .left-side-menu .sub-menu a li{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #334477;
+    /* margin-right: 6rem; */
+    transition: all 0.2s;
+}
+
+.header .nav .left-side-menu .sub-menu a li:hover{
+    color: #400077;
+    font-size: 2.2rem;
+}
+
+.header .nav .left-side-menu a img{
+    position: relative;
+    top: 4rem;
+    width: 14rem;
+    height: 14rem;
+}
+
+.header .nav .left-side-menu a img:hover{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* ------------------------------right-side-menu management------------------------ */
+
+.header .nav .right-side-menu{
+    width: 50%;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .nav .right-side-menu a img{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 4rem;
+}
+
+.header .nav .right-side-menu a img:hover{
+    width: 3rem;
+    height: 3rem;
+}
+
+.header .nav .right-side-menu .sub-menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header .nav .right-side-menu button{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 19rem;
+    height: 5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+}
+
+.header .nav .right-side-menu button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.header .nav .right-side-menu button img{
+    width: 3.2rem;
+    height: 2.2rem;
+    padding-right: 1rem;
+
+}
+/* ----------------------------Section1------------------
+------------------ */
+
+.section1{
+    padding: 15rem 15rem;
+    width: 100%;
+    height: 150vh;
+    background-image: url(images/div.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.section1 .text{
+    animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+.section1 .text h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 8rem;
+    line-height: 9rem;
+    color: #400077;
+    text-shadow: 0px 4px 37px #FFFFFF;
+    -webkit-text-stroke: 2px #400077;
+    cursor: default;
+}
+
+.section1 .text span{
+    font-size: 8rem;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px #FFEE88;
+    text-shadow: 0px 4px 37px rgba(255, 238, 136, 0.6);
+}
+/* -------------------------------Section1 Buttons---------------------
+--------------------- */
+.section1 .button-group{
+    margin-top: 8rem;
+    animation: backInUp;
+    animation-duration: 2s;
+}
+.section1 .button-group .button1{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 19rem;
+    height: 5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+    margin-right: 1.5rem;
+}
+
+.section1 .button-group .button1:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button1 img{
+    width: 3.2rem;
+    height: 2.2rem;
+    padding-right: 1rem;
+}
+
+.section1 .button-group .button2{
+    background: linear-gradient(90deg, #FFDDA0 0%, #FE315A 46.88%, #6D1ADE 100%);;
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 25rem;
+    height: 5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+}
+
+.section1 .button-group .button2:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button2 img{
+    width: 3.2rem;
+    height: 2.2rem;
+    padding-right: 1rem;
+}
+
+/* ------------------------------------------Section2----------------
+----------------------- */
+
+.section2{
+    padding: 15rem 19.6rem;
+    width: 100%;
+    height: auto;
+    background-image: url(images/div1.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 69%;
+}
+
+.section2 .heading{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    cursor: default;
+    line-height: 3.8rem;
+    color: #AAEFFF;
+    margin-bottom: 3rem;
+}
+
+.section2 .para{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: default;
+    line-height: 3rem;
+    color: #BBBFFF;
+    margin-bottom: 7rem;
+}
+
+.section2 .sub-section{
+    width: 100%;
+    height: auto;
+    cursor: default;
+    background: rgba(119, 85, 238, 0.25);
+    border-radius: 16px;
+}
+
+.sub-section{
+    padding: 2.4rem;
+}
+.sub-section .para1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    cursor: default;
+    color: #BBBFFF;
+}
+
+/* -------------------------------------section3----------------------
+------------------ */
+
+.section3{
+    padding: 5rem 19.6rem;
+    background-image: url(images/div3.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+	width: 100%;
+	height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section3 .para2{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #EEAFFF;
+    cursor: default;
+}
+
+.section3 .para3{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    cursor: default;
+    /* text-align: center; */
+    color: #EEAFFF;
+}
+
+.section3 .button3{
+    background: linear-gradient(90deg, #FFDDA0 0%, #FE315A 46.88%, #6D1ADE 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 20rem;
+    height: 5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+}
+
+.section3 .button3:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section3 .button3 img{
+    width: 3.2rem;
+    height: 2.2rem;
+    padding-right: 1rem;
+}
+/* -------------------------------Section4----------------------
+------------------------- */
+.section4{
+    padding: 0rem 19.6rem;
+    width: 100%;
+    height: 120vh;
+    background-image: url(images/div2.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section4 .para4{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 3.2rem;
+    line-height: 4.6rem;
+    text-align: center;
+    color: #5577EE;
+    cursor: default;
+}
+
+.section4 .para4 .sub-para{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #5577EE;
+    cursor: default;
+}
+
+/* ---------------------------------Section5------------------------
+--------------------------- */
+
+.section5{
+    padding: 0rem 19.6rem;
+    background-image: url(images/div4.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section5 img{
+    width: 62.7rem;
+    height: 62.5rem;
+    cursor: pointer;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.section5 img:hover{
+    animation: tada;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+/* ---------------------------------------section6------------------------
+ */
+
+ .section6{
+    padding: 15rem 19.6rem;
+    background-image: url(images/div5.png);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ---------------------------------------section7------------------------
+ */
+
+ .section7{
+    padding: 15rem 19.6rem;
+    background-image: url(images/div7.png);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section7 .para5{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #7755EE;
+    cursor: default;
+}
+
+.section7 button{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 27.7rem;
+    height: 5rem;
+    font-weight: 500;
+    color: #400077;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+    margin-top: 4rem;
+}
+
+.section7 button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+/* ---------------------------------------foooter------------------------
+ */
+
+ .footer{
+    padding: 0rem 19.6rem;
+    background-image: url(images/footer.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo2 a img{
+    width: 13rem;
+    height: auto;
+}
+
+.footer .logo2 a img:hover{
+    animation: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.footer .accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .accounts a .f-logo1{
+    width: 10rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo2{
+    width: 5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo3{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo4{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo5{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo6{
+    width: 10rem;
+    height: auto;
+}
+
+.footer .accounts a img{
+    transition: all 0.2s;
+}
+
+.footer .accounts a img:hover{
+    transform: scale(1.2);
+}
+
+.footer p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-top: 3rem;
+    text-align: center;
+    cursor: default;
+    color: #334477;
+}
+
+/* ------------------reponsive website layout--------------------- */
+
+/* -----------------------Laptop Devices-------------------
+------------ */
+@media(max-width:1280px)
+{
+    /* ----------------Navbar responsiveness 1280px---------------- */
+    .header .nav{
+        padding: 0rem 10rem;
+    }
+
+        /* ----------------------------Section1 Responsive 1280px------------------
+------------------ */
+
+.section1{
+    padding: 15rem 10rem;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------------------------------------------Section2 Responsive 1280px----------------
+----------------------- */
+
+.section2{
+    padding: 5rem 10rem;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------section3 Responsive 1280px----------------------
+------------------ */
+.section3{
+    padding: 5rem 10rem;
+}
+
+/* -------------------------------Section4 Responsive 1280px----------------------
+------------------------- */
+.section4{
+    padding: 5rem 10rem;
+    width: 100%;
+    height: 80vh;
+}
+
+/* ---------------------------------Section5 Responsive 1280px------------------------
+--------------------------- */
+
+.section5{
+    padding: 0rem 10rem;
+}
+
+.section5 img{
+    width: 50rem;
+    height: 50rem;
+}
+
+/* ---------------------------------------section6 responsive 1280px------------------------
+ */
+
+ .section6{
+    padding: 0rem 10rem;
+    width: 100%;
+    height: 40vh;
+}
+
+/* ---------------------------------------section7 Responsive 1280px------------------------
+ */
+
+ .section7{
+    padding: 10rem 10rem;
+    width: 100%;
+    height: 50vh;
+}
+/* ---------------------------------------Footer Responsive 1280px-------------------
+-------- */
+.footer{
+    padding: 0rem 10rem;
+}
+
+.footer p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    margin-top: 3rem;
+    text-align: center;
+    cursor: default;
+    color: #334477;
+}
+
+}
+
+/* -----------------------Tablet Devices-------------------
+------------ */
+@media(max-width:980px)
+{
+    /* ----------------Navbar responsiveness 980px---------------- */
+    .header .nav{
+        padding: 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    /* ----------------left-side-menu responsive 980px---------------- */
+    .header .nav .left-side-menu{
+        display: flex;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        order: 2;
+    }
+    
+    .header .nav .left-side-menu .sub-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* justify-content: space-evenly; */
+    }
+    .header .nav .left-side-menu a img{
+        position: relative;
+        top: 4rem;
+        width: 17rem;
+        height: 17rem;
+    }
+    .header .nav .left-side-menu .sub-menu a li{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1rem;
+        color: #334477;
+        margin-left: 3rem;
+        transition: all 0.2s;
+    }
+    
+    .header .nav .left-side-menu .sub-menu a li:hover{
+        color: #400077;
+        font-size: 4rem;
+    }
+    /* ----------------right-side-menu responsive 980px---------------- */
+
+    .header .nav .right-side-menu{
+        width: 100%;
+        padding: 1rem 0.5rem;
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+    
+    .header .nav .right-side-menu a img{
+        width: 4rem;
+        height: 4rem;
+        /* margin-right: 2.5rem; */
+    }
+    
+    .header .nav .right-side-menu a img:hover{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .header .nav .right-side-menu .sub-menu{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .header .nav .right-side-menu button{
+        background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+        border: 2px solid #400077;
+        box-shadow: 0px 3px 0px #400077;
+        border-radius: 7px;
+        width: 18rem;
+        height: 5rem;
+        font-weight: 1000;
+        font-family: 'Quicksand';
+        font-size: 1.6rem;
+        transition: all 0.2s;
+        /* margin-left: 2rem; */
+    }
+    
+    .header .nav .right-side-menu button:hover{
+        transform: scale(1.01);
+        border: 2px solid #904dca;
+        box-shadow: 0px 5px 0px #904dca;
+    }
+    
+    .header .nav .right-side-menu button img{
+        width: 3.5rem;
+        height: auto;
+    
+    }
+    /* ----------------------------Section1 Responsive 980px------------------
+------------------ */
+
+.section1{
+    padding: 10rem 10rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/div.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section1 .text{
+    animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+.section1 .text h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #400077;
+    text-shadow: 0px 4px 37px #FFFFFF;
+    -webkit-text-stroke: 2px #400077;
+    cursor: default;
+}
+
+.section1 .text span{
+    font-size: 6rem;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px #FFEE88;
+    text-shadow: 0px 4px 37px rgba(255, 238, 136, 0.6);
+}
+/* -------------------------------Section1 Buttons Responsive 980px---------------------
+--------------------- */
+.section1 .button-group{
+    margin-top: 3rem;
+    animation: backInUp;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction: row;
+}
+.section1 .button-group .button1{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 8px;
+    width: 15rem;
+    height: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    margin-right: 2rem;
+}
+
+.section1 .button-group .button1:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button1 img{
+    width: 3rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.section1 .button-group .button2{
+    background: linear-gradient(90deg, #FFDDA0 0%, #FE315A 46.88%, #6D1ADE 100%);;
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 6px;
+    width: 22rem;
+    height: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.section1 .button-group .button2:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button2 img{
+    width: 3rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+/* ------------------------------------------Section2 Responsive 980px----------------
+----------------------- */
+
+.section2{
+    padding: 5rem 10rem;
+    width: 100%;
+    height: auto;
+    background-image: url(images/div1.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2 .heading{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    cursor: default;
+    line-height: 3.5rem;
+    color: #AAEFFF;
+    margin-bottom: 2.5rem;
+}
+
+.section2 .para{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: default;
+    line-height: 2.5rem;
+    color: #BBBFFF;
+    margin-bottom: 2rem;
+    overflow: auto;
+}
+
+.section2 .sub-section{
+    width: 100%;
+    height: auto;
+    cursor: default;
+    background: rgba(119, 85, 238, 0.25);
+    border-radius: 10px;
+}
+
+.sub-section{
+    padding: 2.5rem;
+}
+.sub-section .para1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    overflow-y: scroll;
+    text-align: center;
+    cursor: default;
+    color: #BBBFFF;
+}
+
+/* -------------------------------------section3 Responsive 980px----------------------
+------------------ */
+.section3{
+    padding: 5rem 10rem;
+}
+
+/* -------------------------------Section4 Responsive 980px----------------------
+------------------------- */
+.section4{
+    padding: 5rem 10rem;
+    width: 100%;
+    height: 80vh;
+}
+
+/* ---------------------------------Section5 Responsive 980px------------------------
+--------------------------- */
+
+.section5{
+    padding: 0rem 10rem;
+    background-image: url(images/div4.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section5 img{
+    width: 30rem;
+    height: 30rem;
+    cursor: pointer;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* ---------------------------------------section6 responsive 980px------------------------
+ */
+
+ .section6{
+    padding: 0rem 10rem;
+    width: 100%;
+    height: 40vh;
+}
+
+/* ---------------------------------------section7 Responsive 980px------------------------
+ */
+
+ .section7{
+    padding: 10rem 10rem;
+    background-image: url(images/div7.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section7 .para5{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #7755EE;
+    cursor: default;
+}
+
+.section7 button{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 10px;
+    width: 25rem;
+    height: 5rem;
+    font-weight: 700;
+    color: #400077;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+    margin-top: 1.5rem;
+}
+
+/* ---------------------------------------foooter Responsive 980px------------------------
+ */
+
+ .footer{
+    padding: 0rem 10rem;
+    background-image: url(images/footer.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo2 a img{
+    width: 13rem;
+    height: auto;
+}
+
+.footer .logo2 a img:hover{
+    animation: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.footer .accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .accounts a .f-logo1{
+    width: 10rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo2{
+    width: 5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo3{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo4{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo5{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo6{
+    width: 10rem;
+    height: auto;
+}
+
+.footer .accounts a img{
+    transition: all 0.2s;
+}
+
+.footer .accounts a img:hover{
+    transform: scale(1.2);
+}
+
+.footer p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    margin-top: 3rem;
+    text-align: center;
+    cursor: default;
+    color: #334477;
+}
+
+}
+
+/* -----------------------Mobile Devices-------------------
+------------ */
+@media(max-width:770px){
+    /* ----------------Navbar responsiveness 770px---------------- */
+    .header .nav{
+        padding: 1px 0.5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    /* ----------------left-side-menu responsive 770px---------------- */
+    .header .nav .left-side-menu{
+        display: flex;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        order: 2;
+    }
+    
+    .header .nav .left-side-menu .sub-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* justify-content: space-evenly; */
+    }
+    .header .nav .left-side-menu a img{
+        position: relative;
+        top: 2.5rem;
+        width: 9em;
+        height: 9rem;
+    }
+    .header .nav .left-side-menu .sub-menu a li{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1rem;
+        color: #334477;
+        margin-left: 2rem;
+        transition: all 0.2s;
+    }
+    
+    .header .nav .left-side-menu .sub-menu a li:hover{
+        color: #400077;
+        font-size: 2rem;
+    }
+    /* ----------------right-side-menu responsive 770px---------------- */
+
+    .header .nav .right-side-menu{
+        width: 100%;
+        padding: 1px 0.5rem;
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .header .nav .right-side-menu a img{
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1.5rem;
+    }
+    
+    .header .nav .right-side-menu a img:hover{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .header .nav .right-side-menu .sub-menu{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .header .nav .right-side-menu button{
+        background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+        border: 2px solid #400077;
+        box-shadow: 0px 3px 0px #400077;
+        border-radius: 7px;
+        width: 12rem;
+        height: 4rem;
+        font-weight: 1000;
+        font-family: 'Quicksand';
+        font-size: 1rem;
+        transition: all 0.2s;
+        margin-left: 2rem;
+    }
+    
+    .header .nav .right-side-menu button:hover{
+        transform: scale(1.01);
+        background: linear-gradient(90deg, #a8e0ec 0%, #dc95f0 100%);
+        border: 2px solid #904dca;
+        box-shadow: 0px 5px 0px #904dca;
+    }
+    
+    .header .nav .right-side-menu button img{
+        width: 3rem;
+        height: 1.9rem;
+    
+    }
+
+/* ----------------------------Section1 Responsive 770px------------------
+------------------ */
+
+.section1{
+    padding: 5rem 2rem;
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/div.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section1 .text{
+    animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+.section1 .text h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #400077;
+    text-shadow: 0px 4px 37px #FFFFFF;
+    -webkit-text-stroke: 2px #400077;
+    cursor: default;
+}
+
+.section1 .text span{
+    font-size: 3rem;
+    font-weight: 1000;
+    -webkit-text-stroke: 2px #FFEE88;
+    text-shadow: 0px 4px 37px rgba(255, 238, 136, 0.6);
+}
+/* -------------------------------Section1 Buttons Responsive---------------------
+--------------------- */
+.section1 .button-group{
+    margin-top: 2rem;
+    animation: backInUp;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction: row;
+}
+.section1 .button-group .button1{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 6px;
+    width: 10rem;
+    height: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
+}
+
+.section1 .button-group .button1:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button1 img{
+    width: 2.5rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.section1 .button-group .button2{
+    background: linear-gradient(90deg, #FFDDA0 0%, #FE315A 46.88%, #6D1ADE 100%);;
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 6px;
+    width: 14rem;
+    height: 3rem;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.section1 .button-group .button2:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section1 .button-group .button2 img{
+    width: 2.5rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+/* ------------------------------------------Section2 Responsive 770px----------------
+----------------------- */
+
+.section2{
+    padding: 5rem 2rem;
+    width: 100%;
+    height: auto;
+    background-image: url(images/div1.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2 .heading{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: default;
+    line-height: 2.5rem;
+    color: #AAEFFF;
+    margin-bottom: 1.5rem;
+}
+
+.section2 .para{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: default;
+    line-height: 1.5rem;
+    color: #BBBFFF;
+    margin-bottom: 2rem;
+    overflow: auto;
+}
+
+.section2 .sub-section{
+    width: 100%;
+    height: auto;
+    cursor: default;
+    background: rgba(119, 85, 238, 0.25);
+    border-radius: 10px;
+}
+
+.sub-section{
+    padding: 1.5rem;
+}
+.sub-section .para1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    overflow-y: scroll;
+    cursor: default;
+    color: #BBBFFF;
+}
+
+/* -------------------------------------section3 Responsive 770px----------------------
+------------------ */
+
+.section3{
+    padding: 5rem 2rem;
+    background-image: url(images/div3.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+	width: 100%;
+	height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section3 .para2{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #EEAFFF;
+    cursor: default;
+}
+
+.section3 .para3{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: default;
+    text-align: center;
+    color: #EEAFFF;
+}
+
+.section3 .button3{
+    background: linear-gradient(90deg, #FFDDA0 0%, #FE315A 46.88%, #6D1ADE 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 6px;
+    width: 12rem;
+    height: 4rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: whitesmoke;
+    transition: all 0.2s;
+}
+
+.section3 .button3:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+.section3 .button3 img{
+    width: 3rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+/* -------------------------------Section4 Responsive 770px----------------------
+------------------------- */
+.section4{
+    padding: 5rem 2rem;
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/div2.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section4 .para4{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #5577EE;
+    cursor: default;
+}
+
+.section4 .para4 .sub-para{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #5577EE;
+    cursor: default;
+}
+
+/* ---------------------------------Section5 Responsive 770px------------------------
+--------------------------- */
+
+.section5{
+    padding: 5rem 2rem;
+    background-image: url(images/div4.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section5 img{
+    width: 25rem;
+    height: 25rem;
+    cursor: pointer;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* ---------------------------------------section6 responsive 770px------------------------
+ */
+
+ .section6{
+    padding: 5rem 2rem;
+    width: 100%;
+    height: 20vh;
+}
+
+/* ---------------------------------------section7 Responsive 770px------------------------
+ */
+
+ .section7{
+    padding: 3.5rem 2rem;
+    background-image: url(images/div7.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.section7 .para5{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #7755EE;
+    cursor: default;
+}
+
+.section7 button{
+    background: linear-gradient(90deg, #AAEFFF 0%, #EEAFFF 100%);
+    border: 2px solid #400077;
+    box-shadow: 0px 5px 0px #400077;
+    border-radius: 5px;
+    width: 15rem;
+    height: 3rem;
+    font-weight: 500;
+    color: #400077;
+    font-size: 1rem;
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+.section7 button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 5px 0px #62348a;
+}
+
+/* ---------------------------------------foooter Responsive 770px------------------------
+ */
+
+ .footer{
+    padding: 0rem 2rem;
+    background-image: url(images/footer.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo2 a img{
+    width: 9rem;
+    height: auto;
+}
+
+.footer .logo2 a img:hover{
+    animation: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.footer .accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .accounts a .f-logo1{
+    width: 5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo2{
+    width: 2.5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo3{
+    width: 4.5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo4{
+    width: 4.5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo5{
+    width: 4.5rem;
+    height: auto;
+}
+
+.footer .accounts a .f-logo6{
+    width: 5rem;
+    height: auto;
+}
+
+.footer .accounts a img{
+    transition: all 0.2s;
+}
+
+.footer .accounts a img:hover{
+    transform: scale(1.2);
+}
+
+.footer p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: default;
+    color: #334477;
+}
+
+}
